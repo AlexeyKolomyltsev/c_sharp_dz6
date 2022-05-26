@@ -1,5 +1,5 @@
 ﻿// Задать двумерный массив следующим правилом: Aₘₙ = m+n
-void PrintArr(double[,] arr)
+void PrintArr(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -15,7 +15,7 @@ Console.Write("Введите количество строк m = ");
 int m = int.Parse(Console.ReadLine() ?? "0");
 Console.Write("Введите количество столбцов n = ");
 int n = int.Parse(Console.ReadLine() ?? "0");
-double[,] arrayMN = new double[m, n];
+int[,] arrayMN = new int[m, n];
 for (int i = 0; i < m; i++)
 {
     for (int j = 0; j < n; j++)
